@@ -514,12 +514,12 @@ a.srow:hover{background:#2d2d2a}
 .tour-box .mk-tag{display:inline-block;background:var(--orange);color:#fff;padding:4px 12px;font:800 11px var(--disp);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
 .tour-box p{color:var(--muted);margin-bottom:16px;font-size:15.5px}
 .tour-list{list-style:none;padding:0;display:grid;gap:14px;margin:16px 0 22px;counter-reset:tour}
-.tour-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;color:var(--ink);line-height:1.5;counter-increment:tour}
+.tour-list li{position:relative;padding-left:42px;min-height:28px;font-size:15px;color:var(--ink);line-height:1.5;counter-increment:tour}
 .tour-list li b{color:var(--blue-d)}
-.tour-list li::before{content:counter(tour);flex:none;width:28px;height:28px;background:var(--blue);clip-path:polygon(14% 0,100% 0,86% 100%,0 100%);font:800 14px/28px var(--disp);color:#fff;text-align:center;margin-top:1px}
+.tour-list li::before{content:counter(tour);position:absolute;left:0;top:0;width:28px;height:28px;background:var(--blue);clip-path:polygon(14% 0,100% 0,86% 100%,0 100%);font:800 14px/28px var(--disp);color:#fff;text-align:center}
 .tour-foot{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid var(--line)}
 .tour-foot small{color:var(--muted);font-size:13px}
-@media(max-width:600px){.tour-box{padding:24px 20px 20px}.tour-list li{gap:12px}.tour-list li::before{width:24px;height:24px;font:800 12px/24px var(--disp)}}
+@media(max-width:600px){.tour-box{padding:24px 20px 20px}.tour-list li{padding-left:36px;min-height:24px}.tour-list li::before{width:24px;height:24px;font:800 12px/24px var(--disp)}}
 
 /* ---------- акции ---------- */
 #promos{background:#f7eee6}
